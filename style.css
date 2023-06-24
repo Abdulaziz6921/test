@@ -1,0 +1,220 @@
+body {
+	height: 100vh;
+}
+
+.leftSide {
+	background: #5a61ed;
+}
+
+.signUp {
+	transform: rotate(270deg);
+	position: absolute;
+	bottom: 145px;
+	right: -50px;
+	font-size: 81px;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	z-index: 10;
+	width: 300px;
+}
+
+/* form and inputs  */
+.form-control {
+	background: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0;
+	font-size: 18px;
+	padding-left: 0;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-bottom: 1px solid #5a61ed;
+}
+select.form-control {
+	appearance: menulist;
+}
+
+label {
+	color: #8c8c8c;
+}
+label > span {
+	color: black;
+	font-size: 18px;
+}
+
+.footer a {
+	color: #5a61ed;
+}
+.footer button {
+	background: #5a61ed;
+	font-size: 18px;
+	padding: 8px 35px;
+	border: none;
+	color: white;
+}
+
+/* form validation  */
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+	border-color: none !important;
+	border-bottom-color: red !important;
+	box-shadow: none !important;
+}
+.form-control.is-invalid,
+.was-validated .form-control:valid {
+	border-color: none !important;
+	box-shadow: none !important;
+}
+
+/* SVG  */
+svg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+/* media queries  */
+@media screen and (max-width: 760px) {
+	body {
+		height: 1050px;
+	}
+	.signUp {
+		transform: none;
+		font-size: 30px;
+		top: 15px;
+		bottom: auto;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+	label {
+		font-size: 15px;
+	}
+
+	label > span {
+		color: black;
+		font-size: 16px;
+	}
+	svg {
+		position: absolute;
+		right: 0;
+		bottom: 0px;
+		z-index: -1;
+		width: 300px;
+		height: 300px;
+	}
+}
+
+/* Shake styles for JS  */
+.wrong1 {
+	animation: shaking 0.27s;
+	animation-iteration-count: 2;
+}
+.wrong2 {
+	animation: smallShaking 0.27s;
+	animation-iteration-count: 2;
+}
+.wrong3 {
+	animation: btnShaking 0.27s;
+	animation-iteration-count: 2;
+}
+
+/* All animations */
+
+/* signUp animation  */
+@keyframes shaking {
+	0% {
+		bottom: 145;
+	}
+	25% {
+		bottom: 153px;
+	}
+	50% {
+		bottom: 145px;
+	}
+	75% {
+		bottom: 153px;
+	}
+	100% {
+		bottom: 145px;
+	}
+}
+/* signUp animation  in media*/
+@keyframes smallShaking {
+	0% {
+		left: 0;
+	}
+	25% {
+		left: 6px;
+	}
+	50% {
+		left: 0px;
+	}
+	75% {
+		left: 6px;
+	}
+	100% {
+		left: 5px;
+	}
+}
+/* btn animation */
+@keyframes btnShaking {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(8px);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	75% {
+		transform: translateX(8px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+/* svg animation  */
+.wDmNosZz_0 {
+	stroke-dasharray: 88 90;
+	stroke-dashoffset: 89;
+	animation: wDmNosZz_draw_0 7700ms ease-in 0ms infinite,
+		wDmNosZz_fade 7700ms linear 0ms infinite;
+}
+@keyframes wDmNosZz_draw {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes wDmNosZz_fade {
+	0% {
+		stroke-opacity: 1;
+	}
+
+	94.8051948051948% {
+		stroke-opacity: 1;
+	}
+
+	100% {
+		stroke-opacity: 0;
+	}
+}
+@keyframes wDmNosZz_draw_0 {
+	2.5974025974025974% {
+		stroke-dashoffset: 89;
+	}
+
+	55.84415584415584% {
+		stroke-dashoffset: 0;
+	}
+
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
